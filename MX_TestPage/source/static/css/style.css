@@ -1,0 +1,340 @@
+
+/*___Box model fix style*/
+html{
+
+    background: url("../img/cover.jpeg") fixed center;
+    box-sizing: border-box;
+    background-size: cover;
+
+    line-height: 1.15; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+*, * :before, *:after{
+
+    box-sizing: inherit;
+}
+
+/*___Global style____For howl project (resused)*/
+body{
+    font-family: 'Exo', sans-serif;
+    margin: 0;
+}
+
+a {text-decoration: none;}
+
+a:hover{text-decoration: none;}
+
+h1{font-size: 80px; margin: 0;}
+
+h2{font-size: 25px;margin: 0;}
+
+h3{font-size: 20px;margin: 0;}
+
+
+p{font-size: 16px;}
+
+main{
+    background: rgba(245, 245, 245, 0.7);
+}
+
+/*______Header and Footer_______*/
+
+header, footer{
+    font-size: 40px;
+    font-weight: 200;
+}
+
+header{
+    background: rgba(90, 91, 116, 0.39);
+
+}
+
+
+header h1{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+footer{
+    background: rgba(90, 91, 116, 0.39);
+    text-align: center;
+    position: fixed;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+}
+
+/*___Wrapper___*/
+
+.content-wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 26px 26px;
+    overflow: hidden;
+}
+
+
+.col-narrow {
+    width: 30%;
+    float: left;
+}
+.col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 10px;
+
+}
+
+
+/*___for classes Form___*/
+
+.btnSwitch{
+    background: none;
+    width: auto;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.btnOut{
+    background: none;
+    border: none;
+    color: whitesmoke;;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.btnNote{
+    background: none;
+    border: black solid 1px;
+    width: auto;
+    color: black;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: lighter;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.btnBoxId{
+   position: relative;
+   top: 10px;
+   right: 10px;
+    margin: 0 auto;
+    padding: 1px;
+ }
+
+.btnNote:hover{
+    background: rgba(90, 91, 116, 0.36);
+}
+
+
+.btnOut:hover{
+    font-style: italic;
+}
+
+#mXForm{
+    display: block;
+}
+
+.login{
+    width: 360px;
+    padding: 4% 0 0;
+    margin: auto;
+}
+
+#logOut {
+    display: none;
+    position: absolute;
+    right: 20px;
+    margin: 0 auto;
+    width: auto;
+}
+
+.form{
+    padding: 50px;
+    text-align: center;
+    background: rgba(90, 91, 116, 0.96);
+}
+
+.form .register-form{
+
+    display: none;
+
+}
+.form input{
+    font-family: 'Exo', sans-serif;
+    outline: 1px;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.form .btn{
+
+    border: 1px solid black;
+    width: 35%;
+    padding: 10px;
+    display: inline-block;
+    font-size: 15px;
+    background: whitesmoke;
+    font-family: 'Exo', sans-serif;
+    cursor: pointer;
+
+}
+
+.form .btn:hover{
+
+    background: gray;
+}
+
+.message{
+    margin: 15px 0 0;
+    color: #1d1d1d;
+    font-size: 12px;
+}
+.message a, .profileImgSwitch a{
+    color: #ebebeb;
+
+}
+
+
+/*___for classes___*/
+
+#about{
+    display: none;
+
+}
+
+#about-text h2, h3{
+    line-height: 1.8;
+}
+
+.text-div{
+    margin: 32px 0 0;
+}
+
+#notes{
+
+    display: none;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    position: relative;
+    float: right;
+    padding-right: 40%;
+
+}
+
+ /*___canvasPaint__*/
+
+
+canvas{
+    position: relative;
+    background: whitesmoke;
+}
+
+
+#black{
+    position:absolute;
+    top:17%;
+    left:47%;
+    width:10px;
+    height:10px;
+    background:black;
+    visibility: hidden;
+
+}
+
+#paint{
+
+    display: none;
+}
+
+
+/*___profileImage__*/
+
+#profile{display: none;}
+
+.img-profile{
+
+    display: block;
+    transition: .5s ease;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    padding-left: 10px;
+}
+
+.h2-profile{
+
+    clear: both;
+    margin: 0;
+}
+
+.changeImgText{
+
+    color: #191919;
+    font-size: 16px;
+    padding: 46px;
+    position: relative;
+    left: 50%;
+
+}
+
+.transImg {
+
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 200px;
+    height: auto;
+    margin: 0;
+}
+
+.container:hover .img-profile {opacity: 0.8;}
+
+.container:hover .transImg {opacity: 1;}
+
+.container {position: relative;}
+
+/*___toFooter__*/
+
+.copyright{
+
+    padding: 5px;
+    color: rgba(245, 245, 245, 0.71);
+
+}
+
+.contact-info a{
+
+    padding:  10px;
+    font-size: 24px;
+    display: inline-block;
+
+}
+
+

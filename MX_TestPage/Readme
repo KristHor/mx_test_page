@@ -1,0 +1,40 @@
+
+=======
+Test for page MX Agency ApS
+=======
+
+HTML page that displays Login-Register form, Logout, Image and note function.
+
+Brief Description
+=================
+
+A page where registeristration is needed in order to log in. After logged in user name and email is displayed where the user
+can draw a cartoon figure and write one note.
+
+
+Directory's
+=============
+
+source
+
+  - Static:
+
+        - css
+        the stylesheet
+
+        - img
+        figure
+
+        - js
+        app.js holds javascript and jQuery function to enhance interactive part and animation.
+
+  - index.html
+
+=============
+
+No other languages, frameworks, templates and libraries are used.
+
+enjoy;)
+
+
+

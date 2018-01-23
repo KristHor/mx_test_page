@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MX Test Page login</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Exo|Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="source/static/css/style.css">
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="source/static/lib/jquery-3.2.1.min.js"></script>
+
+    <script src="source/static/js/app.js"></script>
+
+    <script src="source/static/js/paperScript.js"></script>
+
+</head>
+
+
+<body onload="init()">
+
+
+<header>
+
+    <div id="logOut">
+
+        <button class="btnOut" onclick="logOut()">Log Out</button>
+    </div>
+
+    <div class="content-wrap">
+
+        <h1>Test Page</h1>
+    </div>
+</header>
+
+<main>
+
+    <section id="mXForm">
+
+        <div class="content-wrap">
+
+            <div class="login">
+        <div class="form">
+            <form class="register-form">
+                <input id="nameRegId" type="text" placeholder="name" name="nameId" value="">
+                <input id="passRegId" type="text" placeholder="password" name="password" value="">
+                <input id="emailRegId" type="text" placeholder="email" name="email" value="">
+                <input class="btn" type="button" onclick="register(this.form)" value="Register"><br>
+                <p class="message">Not your first time? please <a href="#" >Login</a></p>
+            </form>
+
+
+            <form class="login-form">
+                <input id="nameId" type="text" placeholder="name" name="nameId">
+                <input id="passId" type="text" placeholder="password" name="password">
+                <input class="btn" type="button" onclick="login(this.form)" value="Login"><br>
+                <p class="message">Wups, you don't have a login? please <a href="#" >Register</a></p>
+
+
+            </form>
+        </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="profile">
+
+        <div class="content-wrap">
+
+            <div class="container">
+                <img id="profileImg" class="img-profile col-narrow"
+                 src="source/static/img/newProfileImg.png"/>
+                <div class="transImg">
+                    <div class="changeImgText">Click to draw your profile image</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="paint">
+
+        <div class="content-wrap">
+
+            <canvas id="can" class="img-profile col-narrow"></canvas>
+            <div id="black" onclick="color(this)"></div>
+            <button id="close" class="btnSwitch">x</button>
+
+        </div>
+    </section>
+
+    <section id="about">
+
+        <div class="content-wrap">
+            <div class="col-wide">
+                <div id="about-text">
+                <h2>Welcome:</h2>
+                <h3 bindValue>{name}</h3>
+                <h3 bindValue>{email}</h3>
+                    <button id="btnBoxId" class="btnNote" onclick="wrtNote()">Write a note</button>
+
+                    <div id="notes">
+                            <h4 id="myNote"></h4>
+                        </div>
+
+                    <div class="text-div"></div>
+
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+
+</main>
+
+<footer>
+
+            <p class="copyright">Copyright 2018 by Kristján Thor</p>
+
+</footer>
+
+
+</body>
+</html>
